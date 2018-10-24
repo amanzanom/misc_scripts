@@ -17,7 +17,7 @@
 #                 the script plotShannonSeq.R. The calculations are done as described in Zagordi et al Read length
 #                 vrsus Depth Coverage for Viral Quasispecies Recnstruction. PLoS ONE 7(10) e47046.
 #
-#    Contact: Contact the author at alejandro.manzano@uv.es using 'shannonSAM: ' as
+#    Contact: Contact the author at alejandro.manzano.marin@gmail.com using 'shannonSAM: ' as
 #             as begining for subject for bug reporting, feature request or whatever
 #             (of course realted to the software).
 #
@@ -321,7 +321,6 @@ foreach $file (@opt_inFiles){
 	
 	open (SAMIN, "<$file") || die "Unable to open file $file for reading\n$!\n";
 	while ($line= <SAMIN>){
-#		print $line;$pene=<STDIN>;
 		chomp $line;
 		if ($line=~ m/^@/){
 			next;
